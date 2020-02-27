@@ -37,13 +37,13 @@ def Lumberjack():
         #
         # Left = Pixel(0, 0, image)
         # Right = Pixel(image._size[0] - 1, image._size[1] - 1, image)
-        pixel = get_pixel(449, 633)
+        possible_branch = get_pixel(449, 633)
 
-        if pixel == (161, 116, 56):
-            pyautogui.press('right', 2, 0.07)
+        if possible_branch == (161, 116, 56):
+            pyautogui.press('right', 2, 0.065)
 
-        elif pixel == (211, 247, 255) or pixel == (241, 252, 255):
-            pyautogui.press('left', 2, 0.07)
+        elif possible_branch == (211, 247, 255) or possible_branch == (241, 252, 255):
+            pyautogui.press('left', 2, 0.065)
         # if Right[0] < Left[0]:
         #     pyautogui.press('left', 2, 0.09)
         #
